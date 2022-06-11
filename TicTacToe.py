@@ -18,6 +18,8 @@ board = [[" " for x in range(3)] for y in range(3)]
 
 #count variable to decide the turn of which player
 count = 0  
+
+#Player option
 global single
 
 
@@ -316,6 +318,7 @@ def TicTacToe():
     head.pack(side="bottom") 
     root.mainloop()    
 
+
 #adding window to select number of players
 def nextwindow():
     root.destroy()
@@ -359,13 +362,6 @@ def nextwindow():
     head.pack(side="bottom")
 
     root1.mainloop()
-
-'''  
-def playagain():
-    #Confirm message box  
-    msgg=messagebox.askquestion("Play again?","Do you want to play again?")
-    if msgg=='yes':
-        nextwindow()'''
 
 
 #Calling the main function
