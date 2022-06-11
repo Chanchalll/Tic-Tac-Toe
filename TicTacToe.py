@@ -4,6 +4,8 @@
 
 #For detailed explanation please read TicTacToe.txt
 
+#All the images used in this code have been uploaded in images folder
+
 #Importing all necessary libraries
 import tkinter
 from tkinter import *
@@ -61,20 +63,17 @@ def add_text(s, i, j, game, p1, p2):
             if iswinner(board, "O"):
                 box = messagebox.showinfo("Winner", "Player: O won the match!")
                 game.destroy()
-                #playagain()
                 x = False
 
             elif iswinner(board, "X"):
                 box = messagebox.showinfo("Winner", "Computer: X won the match!")
                 game.destroy()
-                #playagain()
                 x = False
 
         #if all the boxes are filled then it is a tie
             elif (count>=9):
                 box = messagebox.showinfo("Draw","It's a Tie!!")
                 game.destroy()
-                #playagain()
                 x = False
         
         if(x):
@@ -89,17 +88,15 @@ def add_text(s, i, j, game, p1, p2):
             if iswinner(board, "O"):
                 box = messagebox.showinfo("Winner", "Player 1: O won the match!")
                 game.destroy()
-                #playagain()
+                
             elif iswinner(board, "X"):
                 box = messagebox.showinfo("Winner", "Player 2: X won the match!")
                 game.destroy()
-                #playagain()
 
         #if all the boxes are filled then it is a tie
             elif (count>=9):
                 box = messagebox.showinfo("Draw","It's a Tie!!")
                 game.destroy() 
-                #playagain()
 
 
 global temp

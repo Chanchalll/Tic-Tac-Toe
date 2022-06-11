@@ -14,11 +14,17 @@ to each player. The winner will be checked on each move after 3 moves and then t
 
 2. Playing with the computer - Player will take 'O' and computer will take 'X' in alternate chances. Computer move will be decided on the basis of the following steps:
 				a. Check if computer can win in the next move by placing 'X' on the possible moves and return that move
+
 				b. Check if player can win in the next move by placing 'O' on the possible moves and return that move
+
 				c. Check the next two possible moves of computer if computer can win and return one of that move
+
 				d. Check the next two possible moves of player if he can win return that move on the basis of the number of       winning moves available and blocking the place.
+
 				e. Make center move if it is vacant
+
 				f. Make any vacant corner move
+                
 				g. Make any vacant edge move
 
 After following this algorithm, computer will never lose the game i.e. it will only be a tie or computer wins.
